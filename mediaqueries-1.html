@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        
+      #container {
+        background-color: beige;
+        border: 2px solid black;
+        display: flex;
+        justify-content: space-around;
+        width: 450px;
+        margin: 3px;
+        padding: 2px;
+      }
+
+      .boxleft {
+        background-color: aqua;
+        border: 2px solid blue;
+        width: 47%;
+        margin: 3px;
+        padding: 2px;
+        display: flex;
+        flex-direction: column;
+        
+      }
+
+      .boxright {
+        background-color: yellow;
+        border: 2px solid brown;
+        width: 47%;
+        margin: 3px;
+        padding: 2px;
+        
+      }
+
+      p {
+        border: 2px solid red;
+      }
+
+      @media(max-width:640px){
+        #container{
+            display: flex;
+            flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+   
+    <div id="container">
+        <div class="boxleft">
+          <p>Text1</p>
+          <p>Text2</p>
+        </div>
+        <div class="boxright">
+          <img
+            src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHel80alzgYyna6UG8WpsVmyg-rM5f_zl5Ta_UnAHzIFA4nb6l"
+            alt="loki poster"
+            width="170px"
+          />
+        </div>
+    </div>
+  
+  </body>
+</html>
